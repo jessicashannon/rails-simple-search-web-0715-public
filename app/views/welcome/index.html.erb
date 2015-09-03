@@ -1,0 +1,8 @@
+<p>
+  Search for a word:
+</p>
+    <%= form_tag("/search", method: "get") do %>
+      <%= label_tag(:keyword, "Search for:") %>
+      <%= text_field_tag(:keyword) %>
+      <%= submit_tag("Search") %>
+      <% end %>
